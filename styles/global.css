@@ -3,6 +3,10 @@
   --background-color: #19212c;
 }
 
+html {
+  font-family: "Inter", sans-serif;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);

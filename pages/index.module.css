@@ -2,13 +2,13 @@
   grid-column: 2/4;
 }
 
-.main {
-  display: grid;
-  grid-template-columns:
-    minmax(1.2rem, 1fr) minmax(auto, 400px) minmax(auto, 400px)
-    minmax(1.2rem, 1fr);
-}
-
 .intro {
   composes: container;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.3em;
+  font-weight: 700;
+  color: #eef1f7;
 }

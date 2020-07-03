@@ -1,0 +1,52 @@
+.nav {
+  margin-top: -2px;
+}
+
+.header {
+  display: flex;
+  height: 75px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 2/4;
+}
+
+.homeLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navIcon {
+  height: 50px;
+  width: 50px;
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navItem {
+  margin-left: 2rem;
+  color: #eef1f7;
+  font-weight: 250;
+  font-size: 20px;
+}
+
+.navItem:first-of-type {
+  margin-left: 0;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.homeText {
+  color: #eef1f7;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 15px;
+}
