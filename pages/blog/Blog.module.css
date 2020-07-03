@@ -1,0 +1,19 @@
+.blog {
+  grid-column: 2/4;
+}
+
+.blog h1 {
+  font-size: 60px;
+}
+
+.blog h2 {
+  font-size: 40px;
+}
+
+.blog h3 {
+  font-size: 30px;
+}
+
+.blog h4 {
+  font-size: 20px;
+}

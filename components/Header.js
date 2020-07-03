@@ -13,7 +13,7 @@ const Header = () => (
       <nav className={styles.nav}>
         <ul className={styles.navList}>
           {navLinks.map((link) => (
-            <li className={styles.navItem}>
+            <li className={styles.navItem} key={link}>
               <a href="/" className={styles.navLink}>
                 {link}
               </a>
