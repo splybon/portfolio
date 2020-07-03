@@ -1,6 +1,7 @@
 :root {
-  --text-color: rgba(255, 255, 255, 0.86);
+  --text-color: #ddd1c7;
   --background-color: #19212c;
+  --highlight-color: #3993dd;
 }
 
 html {
@@ -13,5 +14,5 @@ body {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--highlight-color);
 }

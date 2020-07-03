@@ -1,48 +1,32 @@
 import styles from "./index.module.css";
-import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <Fragment>
-      <div className={styles.intro}>
-        <h1 className={styles.title}>Hey, I'm Scott</h1>
+    <div className={styles.home}>
+      <h1 className={styles.title}>I'm Scott</h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+      <p className={styles.description}>
+        is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make
+        a. This site is built using <a href="https://reactjs.org/">React</a>,{" "}
+        <a href="https://nextjs.org/">Next.js</a>,{" "}
+        <a href="https://www.netlify.com/">Netlify</a>. And I like bears
+      </p>
+      <ul className={styles.socialList}>
+        <li className={`${styles.socialLink} ${styles.linkedIn}`}>
+          <a href="https://www.linkedin.com/in/scott-plybon-0b923786">
+            <img src="/LinkedIn.svg" className={styles.socialImage} />
+            LinkedIn
           </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+        </li>
+        <li className={styles.socialLink}>
+          <a href="https://github.com/splybon">
+            <img src="/Github.png" className={styles.socialImage} />
+            GitHub
           </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </div>
-
-      <footer></footer>
-    </Fragment>
+        </li>
+      </ul>
+    </div>
   );
 }

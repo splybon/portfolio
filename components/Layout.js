@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "./Header";
 import Head from "next/head";
-import styles from "../styles/utils.module.css";
+import styles from "./Layout.module.css";
 
 const Layout = ({ children }) => (
   <Fragment>
@@ -14,7 +14,7 @@ const Layout = ({ children }) => (
       />
     </Head>
     <Header />
-    <main className={styles.container}>{children}</main>
+    <main className={styles.main}>{children}</main>
   </Fragment>
 );
 
