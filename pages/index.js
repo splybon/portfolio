@@ -14,14 +14,22 @@ export default function Home() {
         <a href="https://www.netlify.com/">Netlify</a>. And I like bears
       </p>
       <ul className={styles.socialList}>
-        <li className={`${styles.socialLink} ${styles.linkedIn}`}>
-          <a href="https://www.linkedin.com/in/scott-plybon-0b923786">
+        <li className={styles.linkedin}>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/scott-plybon-0b923786"
+            className={styles.socialLink}
+          >
             <img src="/LinkedIn.svg" className={styles.socialImage} />
             LinkedIn
           </a>
         </li>
-        <li className={styles.socialLink}>
-          <a href="https://github.com/splybon">
+        <li className={styles.github}>
+          <a
+            href="https://github.com/splybon"
+            target="_blank"
+            className={styles.socialLink}
+          >
             <img src="/Github.png" className={styles.socialImage} />
             GitHub
           </a>
