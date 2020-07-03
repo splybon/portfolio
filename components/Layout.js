@@ -3,10 +3,10 @@ import Header from "./Header";
 import Head from "next/head";
 import styles from "./Layout.module.css";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, title }) => (
   <Fragment>
     <Head>
-      <title>Scott Plybon Portfolio</title>
+      <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;900&display=swap"
