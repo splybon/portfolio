@@ -1,12 +1,22 @@
 import styles from "./index.module.css";
 import Layout from "../components/Layout";
+import Link from "next/link";
+import { allPosts } from "../utils";
 
-export default function Home() {
+export async function getStaticProps() {
+  const posts = await allPosts();
+  return {
+    props: {
+      posts: posts.slice(0, 3),
+    },
+  };
+}
+
+export default function Home({ posts }) {
   return (
     <Layout title="Scott Plybon">
       <div className={styles.home}>
         <h1 className={styles.title}>I'm Scott</h1>
-
         <p className={styles.description}>
           is simply dummy text of the printing and typesetting industry. Lorem
           Ipsum has been the industry's standard dummy text ever since the
@@ -38,6 +48,24 @@ export default function Home() {
             </a>
           </li>
         </ul>
+        <h2 className={styles.sectionHeader}>Projects</h2>
+        <h2 className={styles.sectionHeader}>Recent Posts</h2>
+        <section className={styles.posts}>
+          {posts.map((post) => (
+            <div key={post.title} className={styles.post}>
+              <Link href={"/" + post.path}>
+                <a className={styles.postLink}>
+                  <img src={"/" + post.image} />
+                  <div className={styles.postFooter}>
+                    <h4>{post.title}</h4>
+                    <br />
+                    <div>{post.date}</div>
+                  </div>
+                </a>
+              </Link>
+            </div>
+          ))}
+        </section>
       </div>
     </Layout>
   );

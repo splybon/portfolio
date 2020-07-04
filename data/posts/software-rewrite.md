@@ -2,6 +2,7 @@
 title: When to do a Software Rewrite
 date: 04-02-2019
 image: software-rewrite.jpg
+path: blog/software-rewrite
 ---
 
 #### I first wrote this blog article for Skookum
