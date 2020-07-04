@@ -1,11 +1,14 @@
 ---
 title: When to do a Software Rewrite
-date: 07-03-2020
+date: 04-02-2019
+image: software-rewrite.jpg
 ---
 
 #### I first wrote this blog article for Skookum
 
 The original article is [here](https://skookum.com/blog/when-to-do-a-software-rewrite/)
+
+---
 
 It’s inevitable—there is always some part of the company’s code base that your development team would like to see redone. Maybe the codebase is messy. Maybe it’s hard to understand how some obscure feature is actually working. Or, maybe your developers want to try out a new language or framework. Whatever the case, whether or not to rewrite your software is a question that comes up at one point or another in most organizations.
 

@@ -13,7 +13,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log("what", params);
   const content = await import(`../../data/posts/${params.id}.md`);
   const data = matter(content.default);
 
@@ -29,6 +28,8 @@ const PostTemplate = (props) => (
   <Layout title={props.frontmatter.title}>
     <article className={styles.blog}>
       <h1>{props.frontmatter.title}</h1>
+      <img className={styles.img} src={"/" + props.frontmatter.image} />
+      <div>{props.frontmatter.date}</div>
       <div>
         <ReactMarkdown source={props.markdownBody} />
       </div>

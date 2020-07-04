@@ -4,6 +4,7 @@
 
 .blog h1 {
   font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .blog h2 {
@@ -16,4 +17,9 @@
 
 .blog h4 {
   font-size: 20px;
+}
+
+.img {
+  width: 100%;
+  margin-bottom: 25px;
 }
