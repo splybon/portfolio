@@ -5,9 +5,7 @@ image: software-rewrite.jpg
 path: blog/software-rewrite
 ---
 
-#### I first wrote this blog article for Skookum
-
-The original article is [here](https://skookum.com/blog/when-to-do-a-software-rewrite/)
+I first wrote this blog article for Skookum. The original article is [here](https://skookum.com/blog/when-to-do-a-software-rewrite/)
 
 ---
 
@@ -78,5 +76,3 @@ Know that you are likely going to have to pause on adding new features for the d
 Whether or not to rewrite your software is a complex decision, often with wide-ranging impact on the business. The question internally may be, can we afford to allocate the time and resources needed to get to the heart of this problem and develop a new, comprehensive solution?
 
 However, the real question is: Can we afford to keep trudging on with sub-par software?
-
-We help companies like yours evaluate the opportunity, analyze the potential impact, and develop and implement software solutions that drive the greatest business results. You don’t have to navigate this process alone. Reach out to our team at Skookum and let’s see how we can help.
