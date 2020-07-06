@@ -12,6 +12,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   margin-bottom: 50px;
+  font-size: 18px;
 }
 
 a {

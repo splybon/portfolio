@@ -66,8 +66,14 @@
 
 .posts {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 10px;
+}
+
+@media (min-width: 576px) {
+  .posts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .post img {
