@@ -5,7 +5,7 @@ image: software-rewrite.jpg
 path: blog/software-rewrite
 ---
 
-I first wrote this blog article for Skookum. The original article is [here](https://skookum.com/blog/when-to-do-a-software-rewrite/)
+I first wrote this blog article for Skookum. The original article is [here](https://skookum.com/blog/when-to-do-a-software-rewrite/).
 
 ---
 
@@ -15,7 +15,7 @@ You may think that rewriting a piece of software will make it easier to maintain
 
 That may be the case, but more often the original constraints or requirements for the program or feature simply haven’t aged well. Customer behavior evolves. New technologies emerge. Business processes mature and needs changes. Your software needs to keep up! In this post, we’ll walk through the factors that may point to the need for a complete software rewrite so you can make an informed decision for your organization.
 
-## Why are you considering rewriting your software?
+### Why are you considering rewriting your software?
 
 I’m not saying that a rewrite of your application is never the answer. However, it should be used judiciously. The factors causing you to consider rewriting code can be an indicator that something serious is wrong in your organization or development team—something that needs an entirely different solution.
 
@@ -31,7 +31,7 @@ If these are the issues you are facing, rewriting your software won’t solve th
 
 Now, you may identify and flesh out the problem and still decide to rewrite your software. Or, perhaps after you’ve unearthed deeper issues, you’ll find that a refactor is the better answer. In either case, you will have made an informed decision.
 
-## When is rewriting software a good option?
+### When is rewriting software a good option?
 
 There is no one-size-fits-all answer as to when code or a program should be rewritten, but you can use these guidelines to aid in your decision-making. This is a non-inclusive list of some clues that may mean it’s time to rewrite your application:
 
@@ -53,7 +53,7 @@ Even if you still decide that the best way forward is to rewrite your project, t
 
 When talking to a couple of different people on this topic, one person said that they were using a CMS that was no longer being supported. Here is a situation where a company is being forced to migrate away from its current solution and will most likely have to rewrite a good bit of code. As you continue to use antiquated software, you’ll find that there are fewer developers available who know that software (and you will have to pay them more).
 
-## How can we avoid the hidden costs of a software rewrite?
+### How can we avoid the hidden costs of a software rewrite?
 
 Every software project plan needs to account for potential unknowns. Hidden costs can cause major headaches, especially if there’s no room in the budget to combat them. Make sure you’re accounting for these factors in your software rewrite or refactor decision:
 
@@ -71,7 +71,7 @@ I like to take an iterative approach, where you rewrite a small section of the a
 
 Know that you are likely going to have to pause on adding new features for the duration of your work on the new application. If you don’t, you will have to build the feature twice—once in the old system and again in the new one. It’s important to consider how long you will be without new features, and the effect it will have on your company.
 
-## Taking the leap: do you need to rewrite your software?
+### Taking the leap: do you need to rewrite your software?
 
 Whether or not to rewrite your software is a complex decision, often with wide-ranging impact on the business. The question internally may be, can we afford to allocate the time and resources needed to get to the heart of this problem and develop a new, comprehensive solution?
 

@@ -11,3 +11,14 @@ export const allPosts = async () => {
       .sort((a, b) => new Date(b) - new Date(a))
   );
 };
+
+export const allProjects = async () => {
+  const promArray = fs
+    .readdirSync("./data/projects/")
+    .map((project) => import(`./data/projects/${project}`));
+  return await Promise.all(promArray).then((projectFiles) =>
+    projectFiles
+      .map((project) => matter(project.default).data)
+      .sort((a, b) => a.title - b.title)
+  );
+};
