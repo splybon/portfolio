@@ -64,23 +64,33 @@
   margin-top: 150px;
 }
 
-.posts {
+.cards {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 10px;
 }
 
 @media (min-width: 576px) {
-  .posts {
+  .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.post img {
+.card {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card img {
   width: 100%;
 }
 
-.postFooter {
+.card:hover .cardFooter {
+  margin-top: -14px;
+  padding-top: 25px;
+}
+
+.cardFooter {
   background-color: var(--text-color);
   color: #000;
   display: block;
@@ -91,29 +101,23 @@
   transition: margin-top 300ms ease-out, padding-top 300ms ease-out;
 }
 
-.post:hover .postFooter {
-  margin-top: -14px;
-  padding-top: 25px;
-}
-
-.postFooter h4 {
+.cardFooter h4 {
   margin: 0;
 }
 
-.postLink {
+.cardLink {
   text-decoration: none;
+}
+
+.postFooter {
+  composes: cardFooter;
+  text-align: left;
 }
 
 /* projects */
 
 .projects {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 10px;
-}
-
-.project {
-  text-align: center;
+  composes: cards;
 }
 
 .thumbnail {
@@ -123,12 +127,24 @@
   transform-origin: 0 0;
 }
 
+.thumbnail:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .thumbnail iframe {
   width: 100%;
   height: 900px;
 }
 
 .thumbnailContainer {
+  border: 1px solid var(--text-color);
+  border-bottom: none;
   width: calc(100vw - 3em);
   height: 300px;
   display: inline-block;
@@ -137,11 +153,7 @@
   margin: auto;
 }
 
-@media (min-width: 768px) {
-  .projects {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
+@media (min-width: 576px) {
   .thumbnailContainer {
     width: calc(1040px * 0.25);
     height: 225px;
@@ -151,30 +163,6 @@
     transform: scale(0.25);
     width: 400%;
   }
-}
-
-.projectLink {
-  text-decoration: none;
-}
-
-.projectFooter {
-  background-color: var(--text-color);
-  color: #000;
-  display: block;
-  margin-top: -4px;
-  padding: 15px 8px;
-  border-radius: 0 0 5px 5px;
-  position: relative;
-  transition: margin-top 300ms ease-out, padding-top 300ms ease-out;
-}
-
-.projectFooter:hover {
-  margin-top: -14px;
-  padding-top: 25px;
-}
-
-.projectFooter h4 {
-  margin: 0;
 }
 
 .bullets {

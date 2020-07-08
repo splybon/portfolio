@@ -51,11 +51,11 @@ export default function Home({ posts, projects }) {
           </li>
         </ul>
         <h2 className={styles.sectionHeader}>Recent Posts</h2>
-        <section className={styles.posts}>
+        <section className={styles.cards}>
           {posts.map((post) => (
-            <div key={post.title} className={styles.post}>
+            <div key={post.title} className={styles.card}>
               <Link href={"/" + post.path}>
-                <a className={styles.postLink}>
+                <a className={styles.cardLink}>
                   <img src={"/" + post.image} />
                   <div className={styles.postFooter}>
                     <h4>{post.title}</h4>
@@ -68,20 +68,20 @@ export default function Home({ posts, projects }) {
           ))}
         </section>
         <h2 className={styles.sectionHeader}>Projects</h2>
-        <section className={styles.projects} ref={projects}>
+        <section className={styles.cards}>
           {projects.map((project) => (
-            <div key={project.title} className={styles.project}>
-              <div className={styles.thumbnailContainer}>
-                <div className={styles.thumbnail}>
-                  <iframe src={project.preview} frameBorder="0"></iframe>
-                </div>
-              </div>
+            <div key={project.title} className={styles.card}>
               <a
                 href={project.link}
-                className={styles.projectLink}
+                className={styles.cardLink}
                 target="_blank"
               >
-                <div className={styles.projectFooter}>
+                <div className={styles.thumbnailContainer}>
+                  <div className={styles.thumbnail}>
+                    <iframe src={project.preview} frameBorder="0"></iframe>
+                  </div>
+                </div>
+                <div className={styles.cardFooter}>
                   <h4>{project.title}</h4>
                   <ul className={styles.bullets}>
                     {project.bullets.map((bullet) => (
