@@ -20,13 +20,14 @@ export default function Home({ posts, projects }) {
       <div className={styles.home}>
         <h1 className={styles.title}>I'm Scott</h1>
         <p className={styles.description}>
-          is simply dummy text of the printing and typesetting industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a. This site is built using{" "}
-          <a href="https://reactjs.org/">React</a>,{" "}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore. This site is
+          built using <a href="https://reactjs.org/">React</a>,{" "}
           <a href="https://nextjs.org/">Next.js</a>,{" "}
-          <a href="https://www.netlify.com/">Netlify</a>. And I like bears
+          <a href="https://www.netlify.com/">Netlify</a>.
         </p>
         <ul className={styles.socialList}>
           <li className={styles.linkedin}>
@@ -85,7 +86,7 @@ export default function Home({ posts, projects }) {
                   <h4>{project.title}</h4>
                   <ul className={styles.bullets}>
                     {project.bullets.map((bullet) => (
-                      <li>
+                      <li key={bullet}>
                         <small>{bullet}</small>
                       </li>
                     ))}
