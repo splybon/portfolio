@@ -20,12 +20,11 @@ export default function Home({ posts, projects }) {
       <div className={styles.home}>
         <h1 className={styles.title}>I'm Scott</h1>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore. This site is
-          built using <a href="https://reactjs.org/">React</a>,{" "}
+          Hi there - some things about me are that I love programming, working
+          with other developers, and making cool stuff. If you enjoy the writing
+          or any of the projects on this site feel free to reach out to me on
+          LinkedIn. This site is built using{" "}
+          <a href="https://reactjs.org/">React</a>,{" "}
           <a href="https://nextjs.org/">Next.js</a>,{" "}
           <a href="https://www.netlify.com/">Netlify</a>.
         </p>
