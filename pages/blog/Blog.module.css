@@ -1,5 +1,6 @@
 .blog {
   grid-column: 2/4;
+  line-height: 1.5;
 }
 
 .blog h1 {
