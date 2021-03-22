@@ -12,10 +12,10 @@ const Header = () => (
       </a>
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-          {navLinks.map((link) => (
-            <li className={styles.navItem} key={link}>
-              <a href="/" className={styles.navLink}>
-                {link}
+          {navLinks.map(({ title, page }) => (
+            <li className={styles.navItem} key={title}>
+              <a href={page} className={styles.navLink}>
+                {title}
               </a>
             </li>
           ))}
