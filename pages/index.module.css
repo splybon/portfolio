@@ -82,7 +82,7 @@
 }
 
 .card img {
-  width: 100%;
+  height: 175px;
 }
 
 .card:hover .cardFooter {
@@ -112,6 +112,10 @@
 .postFooter {
   composes: cardFooter;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
 }
 
 /* projects */
