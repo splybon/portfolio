@@ -4,11 +4,11 @@ import Link from "next/link";
 import { allPosts, allProjects } from "../utils";
 
 export async function getStaticProps() {
-  const posts = await allPosts();
+  const posts = await allPosts(6);
   const projects = await allProjects();
   return {
     props: {
-      posts: posts.slice(0, 3),
+      posts,
       projects,
     },
   };

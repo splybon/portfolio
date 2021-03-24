@@ -1,6 +1,6 @@
 ---
 title: General Coding Practices
-date: 03-24-2021
+date: 03-8-2021
 image: general-coding.jpg
 path: blog/general-coding-practices
 tag: Coffee Thoughts
