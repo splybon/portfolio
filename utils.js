@@ -1,7 +1,7 @@
 import matter from "gray-matter";
 import fs from "fs";
 
-export const allPosts = async (count = 3) => {
+export const allPosts = async (count) => {
   const promArray = fs
     .readdirSync("./data/posts/")
     .map((post) => import(`./data/posts/${post}`));

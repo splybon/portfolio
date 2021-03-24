@@ -4,7 +4,7 @@ import Link from "next/link";
 import { allPosts, allProjects } from "../utils";
 
 export async function getStaticProps() {
-  const posts = await allPosts(6);
+  const posts = await allPosts(3);
   const projects = await allProjects();
   return {
     props: {
@@ -49,7 +49,9 @@ export default function Home({ posts, projects }) {
             </a>
           </li>
         </ul>
-        <h2 className={styles.sectionHeader}>Recent Posts</h2>
+        <h2 className={styles.sectionHeader}>
+          Recent Posts &nbsp; <Link href="/blog">View all >></Link>
+        </h2>
         <section className={styles.cards}>
           {posts.map((post) => (
             <div key={post.title} className={styles.card}>

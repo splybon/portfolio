@@ -64,6 +64,10 @@
   margin-top: 150px;
 }
 
+.sectionHeader a {
+  font-size: 15px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr;
