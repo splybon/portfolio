@@ -17,8 +17,6 @@ export const allProjects = async () => {
     .readdirSync("./data/projects/")
     .map((project) => import(`./data/projects/${project}`));
   return await Promise.all(promArray).then((projectFiles) =>
-    projectFiles
-      .map((project) => matter(project.default).data)
-      .sort((a, b) => a.title - b.title)
+    projectFiles.map((project) => matter(project.default).data)
   );
 };

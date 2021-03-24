@@ -21,11 +21,11 @@
 }
 
 .img {
-  margin-bottom: 25px;
   max-height: 350px;
   margin: auto;
   width: auto;
   display: block;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
