@@ -50,7 +50,7 @@ export default function Home({ posts, projects }) {
           </li>
         </ul>
         <h2 className={styles.sectionHeader}>
-          Recent Posts &nbsp; <Link href="/blog">View all >></Link>
+          Recent Posts &nbsp; <Link href="/blog">View all &gt;&gt;</Link>
         </h2>
         <section className={styles.cards}>
           {posts.map((post) => (

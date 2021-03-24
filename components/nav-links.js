@@ -1,5 +1,5 @@
 export default [
-  { title: "About", page: "/" },
+  { title: "About", page: "/about" },
   { title: "Blog", page: "/blog" },
   { title: "Resume", page: "/Resume.pdf" },
 ];
