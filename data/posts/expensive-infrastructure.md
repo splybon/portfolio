@@ -6,9 +6,9 @@ path: blog/expensive-infrastructure
 tag: Coffee Thoughts
 ---
 
-Coffee Thoughts are a series of slack posts used to generate discussion at my place of work. Thanks [Eric Allen](https://github.com/ericrallen) for starting the iniative.
+Coffee Thoughts are a series of slack posts used to generate discussion at my place of work.
 
-### Hope you’re enjoying some monday coffee, here are some thoughts to go along with it.
+Hope you’re enjoying some monday coffee, here are some thoughts to go along with it.
 
 I came across [this](https://blog.usejournal.com/you-dont-need-all-that-complex-expensive-distracting-infrastructure-a70dbe0dbccb) article last week about unnecessary infrastructure and it resonated with me a bit, so I thought I would share. The author claims that for many projects you don’t need kubernetes, autoscaling, or containerization to run. Clearly at some point some deployment orchestration is needed, but I also think people reach for these frameworks without realizing the overhead necessary to run them.
 

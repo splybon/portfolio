@@ -6,7 +6,7 @@ path: blog/commit-messages
 tag: Coffee Thoughts
 ---
 
-It’s time for Monday's edition of coffee thoughts. And you know that means, it’s time for a coffee emoji ☕ since that is apparently all you need to make it official. Today I wanted to discuss commit messages.
+Coffee Thoughts are a series of slack posts used to generate discussion at my place of work.
 
 I’m about to start on my 5th project here at Skookum, and it seems like every project I’ve worked on has handled commit messages a little differently. Back when I thought there was only 1 right way to do something, my gold standard came from [this article](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message) and I adopted the practice as my own. At the time I would always make sure to leave rambling, multi-line commit messages, and I looked down from my throne of best practices on those who didn’t. However, after an insignificant amount of time, I realized that I was squashing my branches in gitlab before merging, thus erasing all of my beautiful commits in the process. The horror.
 
